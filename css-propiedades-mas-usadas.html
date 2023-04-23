@@ -6,30 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propiedades más usadas </title>
     <style>
+        body  {
+            background: turquoise;
+            
+        }
+
         section {
             width: 100%;
             display: flex;
             justify-content: center;
+            
+            
+            
         }
         .card {
-            width: 500px;
-            height: 500px;
-            background: teal;
+            width: 600px;
+            height: 600px;
+            background: azure;
             border-radius: 20px;
+            overflow: hidden;
+            align-content: center;
+            border: 5px solid azure;
+            z-index: 5;
+            box-shadow: 0 5px 20px rgb(0 0 0 / 0.2);
+            
+            
+            
 
         }
+        
         .card img{
             width: 100%;
+            height: 35%;
+            z-index: 4;
+            
         }
+        .avatar{
+            width: 200px;
+            height: 200px;
+            background: azure;
+            border-radius: 100%;
+            z-index: 5;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            margin: 5px;
+            padding: 5px;
+            
+            
+
+        }
+        .avatar img {
+            
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            
+            
+        }
+        #text {
+            z-index: 6;
+            top: 55%;
+            position: absolute;
+            left: 37%;
+            color: darkslategray;
+            font-family: Helvetica;
+
+            
+
+        }
+        p:nth-child(1) {
+            color: #1E90FF;
+            font-size: 20px;
+
+        }
+
+        p:nth-child(2) {
+            text-align: center;
+
+        }
+
+        .follow {
+            text-align: center;
+            height: 50px;
+            background: #1E90FF;
+            position: relative;
+            top: 55%;
+            width: 600px;
+            
+        }
+
+        div a {
+            color: azure;
+            font-size: 50px;
+            font-family: Helvetica;
+            
+        }
+
     </style>
 </head>
 <body>
+    
     <section>
         <div class="card"> 
             <img src="../../../../general-images/hermit-crab-onpc.png"
             alt="La playita">
+
+            <div class="avatar">
+                <img src="../../images-for-projects/alejo-playa.jpeg" 
+                alt="Mi foto en la playa">
+            </div>
+
+            <div id="text">
+                <p>Alejandro Jaramillo Arango</p>
+                <p> Junnior Web Development programmer, artist and traveler </p>
+            </div>
+
+            <div class="follow">
+                <a href="https://github.com/Ale-j"> FOLLOW </a>
+            </div>
         </div>
+
+        
     </section>
+
+    
    
 </body>
 </html>
